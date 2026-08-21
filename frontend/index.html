@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Dashboard implementasi referensi LOGIVISTA SULAMPUA"
+    />
+    <title>LOGIVISTA SULAMPUA | Dashboard Analitik Logistik</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Beranda LOGIVISTA SULAMPUA">
+        <span class="brand-mark" aria-hidden="true">LV</span>
+        <span>
+          <strong>LOGIVISTA</strong>
+          <small>SULAMPUA</small>
+        </span>
+      </a>
+      <div id="api-status" class="api-status pending">Memeriksa API</div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">VISIBILITAS JARINGAN DISTRIBUSI</p>
+          <h1>Disparitas harga terlihat. Jaringan logistik terbaca.</h1>
+          <p>
+            Implementasi referensi analitik harga komoditas dan konektivitas
+            distribusi dengan cakupan awal Kabupaten Halmahera Barat.
+          </p>
+          <div class="hero-tags" aria-label="Status implementasi">
+            <span>Versi 0.1.0</span>
+            <span>PDI-CV</span>
+            <span>Data contoh anonim</span>
+          </div>
+        </div>
+        <aside class="scope-card">
+          <span class="scope-label">CAKUPAN AWAL</span>
+          <strong>Halmahera Barat</strong>
+          <p>
+            “Sulampua” adalah arah pengembangan wilayah, bukan klaim cakupan
+            operasional saat ini.
+          </p>
+        </aside>
+      </section>
+
+      <section class="notice" role="note">
+        <strong>Catatan metodologi:</strong>
+        PDI v0.1 menggunakan formula usulan
+        <code>(maksimum − minimum) / rata-rata × 100%</code>. Ambang pada demo
+        bersifat konfigurasi ilustratif, bukan ambang kebijakan resmi.
+      </section>
+
+      <section class="workspace" aria-label="Ruang kerja analitik">
+        <article class="panel controls-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">MODUL 01</p>
+              <h2>Analitik Harga</h2>
+            </div>
+            <span class="module-icon" aria-hidden="true">↗</span>
+          </div>
+          <p>
+            Uji agregasi harga per wilayah, CV populasi, PDI v0.1, tren, dan
+            keterlacakan sumber.
+          </p>
+          <div class="input-grid">
+            <label>
+              Ambang CV (%)
+              <input id="cv-threshold" type="number" min="0" step="0.1" value="10" />
+            </label>
+            <label>
+              Ambang PDI v0.1 (%)
+              <input id="pdi-threshold" type="number" min="0" step="0.1" value="15" />
+            </label>
+          </div>
+          <button id="analyze-price" type="button">Analisis Data Harga Contoh</button>
+        </article>
+
+        <article class="panel controls-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">MODUL 02</p>
+              <h2>Analitik Jaringan</h2>
+            </div>
+            <span class="module-icon" aria-hidden="true">⌘</span>
+          </div>
+          <p>
+            Uji konektivitas simpul, derajat masuk-keluar, waktu tempuh,
+            frekuensi layanan, dan simpul berkonektivitas rendah.
+          </p>
+          <ul class="compact-list">
+            <li>4 simpul agregat</li>
+            <li>4 rute multimoda</li>
+            <li>Tanpa koordinat sensitif</li>
+          </ul>
+          <button id="analyze-network" class="secondary" type="button">
+            Analisis Jaringan Contoh
+          </button>
+        </article>
+      </section>
+
+      <section class="results" aria-live="polite">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">RINGKASAN HASIL</p>
+            <h2>Indikator Analitik</h2>
+          </div>
+          <span id="result-context">Belum ada analisis</span>
+        </div>
+
+        <div class="metric-grid">
+          <article class="metric-card">
+            <span id="metric-one-label">CV</span>
+            <strong id="metric-one">—</strong>
+          </article>
+          <article class="metric-card">
+            <span id="metric-two-label">PDI v0.1</span>
+            <strong id="metric-two">—</strong>
+          </article>
+          <article class="metric-card">
+            <span id="metric-three-label">Wilayah</span>
+            <strong id="metric-three">—</strong>
+          </article>
+          <article class="metric-card accent">
+            <span id="metric-four-label">Status</span>
+            <strong id="metric-four">MENUNGGU</strong>
+          </article>
+        </div>
+
+        <article class="detail-panel">
+          <div>
+            <h3>Detail terstruktur</h3>
+            <p>Respons API ditampilkan apa adanya untuk pemeriksaan teknis.</p>
+          </div>
+          <pre id="result-json">Jalankan salah satu modul analitik.</pre>
+        </article>
+      </section>
+
+      <section class="provenance">
+        <div>
+          <p class="eyebrow">BATAS IMPLEMENTASI</p>
+          <h2>Transparan sejak versi awal</h2>
+        </div>
+        <div class="provenance-grid">
+          <p><strong>Data</strong> Seluruh data bawaan adalah contoh sintetis dan anonim.</p>
+          <p><strong>Analitik</strong> Hasil bersifat deskriptif, bukan keputusan kebijakan.</p>
+          <p><strong>Operasional</strong> Integrasi sumber pemerintah memerlukan izin dan verifikasi.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>LOGIVISTA SULAMPUA v0.1.0</span>
+      <span>Implementasi referensi Hak Cipta Program Komputer</span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

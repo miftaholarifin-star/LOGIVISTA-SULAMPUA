@@ -1,0 +1,55 @@
+{
+  "observations": [
+    {
+      "source": "Sumber sintetis A",
+      "date": "2026-01-05",
+      "region": "Jailolo",
+      "commodity": "Beras medium",
+      "unit": "kg",
+      "price": 14800
+    },
+    {
+      "source": "Sumber sintetis A",
+      "date": "2026-01-05",
+      "region": "Sahu",
+      "commodity": "Beras medium",
+      "unit": "kg",
+      "price": 16200
+    },
+    {
+      "source": "Sumber sintetis A",
+      "date": "2026-01-05",
+      "region": "Ibu",
+      "commodity": "Beras medium",
+      "unit": "kg",
+      "price": 17100
+    },
+    {
+      "source": "Sumber sintetis B",
+      "date": "2026-01-12",
+      "region": "Jailolo",
+      "commodity": "Beras medium",
+      "unit": "kg",
+      "price": 15100
+    },
+    {
+      "source": "Sumber sintetis B",
+      "date": "2026-01-12",
+      "region": "Sahu",
+      "commodity": "Beras medium",
+      "unit": "kg",
+      "price": 16500
+    },
+    {
+      "source": "Sumber sintetis B",
+      "date": "2026-01-12",
+      "region": "Ibu",
+      "commodity": "Beras medium",
+      "unit": "kg",
+      "price": 17600
+    }
+  ],
+  "cv_threshold": 10,
+  "pdi_threshold": 15,
+  "persist": false
+}

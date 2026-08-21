@@ -1,0 +1,5 @@
+source_node,target_node,distance_km,lead_time_hours,frequency_per_week,mode,active
+Pelabuhan Agregat,Hub Jailolo,18,2.2,4,laut,true
+Hub Jailolo,Pasar Sahu,31,1.6,3,darat,true
+Hub Jailolo,Pasar Ibu,47,2.4,2,darat,true
+Pasar Sahu,Pasar Ibu,42,2.8,1,darat,true
