@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Jika menggunakan materi ini dengan izin pemegang hak, sitasikan perangkat lunak berikut."
+title: "LOGIVISTA SULAMPUA"
+type: software
+version: 0.1.0
+date-released: 2026-08-21
+authors:
+  - family-names: Arifin
+    given-names: Miftahol
+  - family-names: Winati
+    given-names: Famila Dwi
+  - family-names: Almer
+    given-names: Rui
+abstract: >-
+  Sistem analitik visibilitas jaringan distribusi dan disparitas harga
+  komoditas antarpulau berbasis PDI-CV dengan cakupan awal Kabupaten
+  Halmahera Barat.
+repository-code: "https://github.com/miftaholarifin-star/LOGIVISTA-SULAMPUA"
+license: LicenseRef-Proprietary

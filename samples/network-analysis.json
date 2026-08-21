@@ -1,0 +1,41 @@
+{
+  "routes": [
+    {
+      "source_node": "Pelabuhan Agregat",
+      "target_node": "Hub Jailolo",
+      "distance_km": 18,
+      "lead_time_hours": 2.2,
+      "frequency_per_week": 4,
+      "mode": "laut",
+      "active": true
+    },
+    {
+      "source_node": "Hub Jailolo",
+      "target_node": "Pasar Sahu",
+      "distance_km": 31,
+      "lead_time_hours": 1.6,
+      "frequency_per_week": 3,
+      "mode": "darat",
+      "active": true
+    },
+    {
+      "source_node": "Hub Jailolo",
+      "target_node": "Pasar Ibu",
+      "distance_km": 47,
+      "lead_time_hours": 2.4,
+      "frequency_per_week": 2,
+      "mode": "darat",
+      "active": true
+    },
+    {
+      "source_node": "Pasar Sahu",
+      "target_node": "Pasar Ibu",
+      "distance_km": 42,
+      "lead_time_hours": 2.8,
+      "frequency_per_week": 1,
+      "mode": "darat",
+      "active": true
+    }
+  ],
+  "persist": false
+}
